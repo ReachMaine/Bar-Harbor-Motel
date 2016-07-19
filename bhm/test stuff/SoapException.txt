@@ -1,0 +1,368 @@
+SOAPFault Exception:
+
+object(SoapFault)#387 (9) {
+  ["message":protected]=>
+  string(22) "Internal Server Error."
+  ["string":"Exception":private]=>
+  string(0) ""
+  ["code":protected]=>
+  int(0)
+  ["file":protected]=>
+  string(91) "/home/reachnh6/public_html/barharbormotel.com/wp-content/themes/bhm1/inc/bhm-checkavail.php"
+  ["line":protected]=>
+  int(435)
+  ["trace":"Exception":private]=>
+  array(15) {
+    [0]=>
+    array(4) {
+      ["function"]=>
+      string(11) "__doRequest"
+      ["class"]=>
+      string(10) "SoapClient"
+      ["type"]=>
+      string(2) "->"
+      ["args"]=>
+      array(5) {
+        [0]=>
+        string(1020) "
+1204je398bgf212196LindaSpeight51 Pine Heath RdBar HarborME04605(207) 288-3918lspeight@ellsworthAmerican.comAARP hey.6011 1111 1111 111712/18Linda M. Speight2
+"
+        [1]=>
+        string(49) "https://www.nitelink.com/nitelinkws/nitelink.asmx"
+        [2]=>
+        string(53) "http://remcosoftware.com/NitelinkWS/SubmitReservation"
+        [3]=>
+        int(1)
+        [4]=>
+        int(0)
+      }
+    }
+    [1]=>
+    array(6) {
+      ["file"]=>
+      string(91) "/home/reachnh6/public_html/barharbormotel.com/wp-content/themes/bhm1/inc/bhm-checkavail.php"
+      ["line"]=>
+      int(435)
+      ["function"]=>
+      string(6) "__call"
+      ["class"]=>
+      string(10) "SoapClient"
+      ["type"]=>
+      string(2) "->"
+      ["args"]=>
+      array(2) {
+        [0]=>
+        string(17) "SubmitReservation"
+        [1]=>
+        array(1) {
+          [0]=>
+          array(21) {
+            ["userid"]=>
+            int(1204)
+            ["userpwd"]=>
+            string(8) "je398bgf"
+            ["Arrival"]=>
+            object(DateTime)#384 (3) {
+              ["date"]=>
+              string(26) "2015-05-04 00:00:00.000000"
+              ["timezone_type"]=>
+              int(3)
+              ["timezone"]=>
+              string(3) "UTC"
+            }
+            ["Departure"]=>
+            object(DateTime)#385 (3) {
+              ["date"]=>
+              string(26) "2015-05-07 00:00:00.000000"
+              ["timezone_type"]=>
+              int(3)
+              ["timezone"]=>
+              string(3) "UTC"
+            }
+            ["Adults"]=>
+            int(2)
+            ["Children"]=>
+            int(1)
+            ["roomtype"]=>
+            int(2)
+            ["seasonnumber"]=>
+            int(196)
+            ["firstname"]=>
+            string(5) "Linda"
+            ["lastname"]=>
+            string(7) "Speight"
+            ["address"]=>
+            string(16) "51 Pine Heath Rd"
+            ["city"]=>
+            string(10) "Bar Harbor"
+            ["state"]=>
+            string(2) "ME"
+            ["postalcode"]=>
+            string(5) "04605"
+            ["phone"]=>
+            string(14) "(207) 288-3918"
+            ["email"]=>
+            string(30) "lspeight@ellsworthAmerican.com"
+            ["specialrequests"]=>
+            string(9) "AARP hey."
+            ["creditcardnumber"]=>
+            string(19) "6011 1111 1111 1117"
+            ["expdate"]=>
+            string(5) "12/18"
+            ["cardholder"]=>
+            string(16) "Linda M. Speight"
+            ["CompanyNumber"]=>
+            int(2)
+          }
+        }
+      }
+    }
+    [2]=>
+    array(6) {
+      ["file"]=>
+      string(91) "/home/reachnh6/public_html/barharbormotel.com/wp-content/themes/bhm1/inc/bhm-checkavail.php"
+      ["line"]=>
+      int(435)
+      ["function"]=>
+      string(17) "SubmitReservation"
+      ["class"]=>
+      string(10) "SoapClient"
+      ["type"]=>
+      string(2) "->"
+      ["args"]=>
+      array(1) {
+        [0]=>
+        array(21) {
+          ["userid"]=>
+          int(1204)
+          ["userpwd"]=>
+          string(8) "je398bgf"
+          ["Arrival"]=>
+          object(DateTime)#384 (3) {
+            ["date"]=>
+            string(26) "2015-05-04 00:00:00.000000"
+            ["timezone_type"]=>
+            int(3)
+            ["timezone"]=>
+            string(3) "UTC"
+          }
+          ["Departure"]=>
+          object(DateTime)#385 (3) {
+            ["date"]=>
+            string(26) "2015-05-07 00:00:00.000000"
+            ["timezone_type"]=>
+            int(3)
+            ["timezone"]=>
+            string(3) "UTC"
+          }
+          ["Adults"]=>
+          int(2)
+          ["Children"]=>
+          int(1)
+          ["roomtype"]=>
+          int(2)
+          ["seasonnumber"]=>
+          int(196)
+          ["firstname"]=>
+          string(5) "Linda"
+          ["lastname"]=>
+          string(7) "Speight"
+          ["address"]=>
+          string(16) "51 Pine Heath Rd"
+          ["city"]=>
+          string(10) "Bar Harbor"
+          ["state"]=>
+          string(2) "ME"
+          ["postalcode"]=>
+          string(5) "04605"
+          ["phone"]=>
+          string(14) "(207) 288-3918"
+          ["email"]=>
+          string(30) "lspeight@ellsworthAmerican.com"
+          ["specialrequests"]=>
+          string(9) "AARP hey."
+          ["creditcardnumber"]=>
+          string(19) "6011 1111 1111 1117"
+          ["expdate"]=>
+          string(5) "12/18"
+          ["cardholder"]=>
+          string(16) "Linda M. Speight"
+          ["CompanyNumber"]=>
+          int(2)
+        }
+      }
+    }
+    [3]=>
+    array(4) {
+      ["file"]=>
+      string(91) "/home/reachnh6/public_html/barharbormotel.com/wp-content/themes/bhm1/inc/bhm-checkavail.php"
+      ["line"]=>
+      int(145)
+      ["function"]=>
+      string(29) "bhm_nitelink_make_reservation"
+      ["args"]=>
+      array(0) {
+      }
+    }
+    [4]=>
+    array(2) {
+      ["function"]=>
+      string(23) "bhm_ninja_forms_process"
+      ["args"]=>
+      array(1) {
+        [0]=>
+        &string(0) ""
+      }
+    }
+    [5]=>
+    array(4) {
+      ["file"]=>
+      string(68) "/home/reachnh6/public_html/barharbormotel.com/wp-includes/plugin.php"
+      ["line"]=>
+      int(496)
+      ["function"]=>
+      string(20) "call_user_func_array"
+      ["args"]=>
+      array(2) {
+        [0]=>
+        &string(23) "bhm_ninja_forms_process"
+        [1]=>
+        &array(1) {
+          [0]=>
+          string(0) ""
+        }
+      }
+    }
+    [6]=>
+    array(4) {
+      ["file"]=>
+      string(116) "/home/reachnh6/public_html/barharbormotel.com/wp-content/plugins/ninja-forms/includes/display/processing/process.php"
+      ["line"]=>
+      int(9)
+      ["function"]=>
+      string(9) "do_action"
+      ["args"]=>
+      array(1) {
+        [0]=>
+        &string(19) "ninja_forms_process"
+      }
+    }
+    [7]=>
+    array(4) {
+      ["file"]=>
+      string(120) "/home/reachnh6/public_html/barharbormotel.com/wp-content/plugins/ninja-forms/includes/display/processing/pre-process.php"
+      ["line"]=>
+      int(34)
+      ["function"]=>
+      string(19) "ninja_forms_process"
+      ["args"]=>
+      array(0) {
+      }
+    }
+    [8]=>
+    array(2) {
+      ["function"]=>
+      string(23) "ninja_forms_pre_process"
+      ["args"]=>
+      array(1) {
+        [0]=>
+        &string(0) ""
+      }
+    }
+    [9]=>
+    array(4) {
+      ["file"]=>
+      string(68) "/home/reachnh6/public_html/barharbormotel.com/wp-includes/plugin.php"
+      ["line"]=>
+      int(496)
+      ["function"]=>
+      string(20) "call_user_func_array"
+      ["args"]=>
+      array(2) {
+        [0]=>
+        &string(23) "ninja_forms_pre_process"
+        [1]=>
+        &array(1) {
+          [0]=>
+          string(0) ""
+        }
+      }
+    }
+    [10]=>
+    array(4) {
+      ["file"]=>
+      string(61) "/home/reachnh6/public_html/barharbormotel.com/wp-settings.php"
+      ["line"]=>
+      int(353)
+      ["function"]=>
+      string(9) "do_action"
+      ["args"]=>
+      array(1) {
+        [0]=>
+        &string(4) "init"
+      }
+    }
+    [11]=>
+    array(4) {
+      ["file"]=>
+      string(59) "/home/reachnh6/public_html/barharbormotel.com/wp-config.php"
+      ["line"]=>
+      int(80)
+      ["args"]=>
+      array(1) {
+        [0]=>
+        string(61) "/home/reachnh6/public_html/barharbormotel.com/wp-settings.php"
+      }
+      ["function"]=>
+      string(12) "require_once"
+    }
+    [12]=>
+    array(4) {
+      ["file"]=>
+      string(57) "/home/reachnh6/public_html/barharbormotel.com/wp-load.php"
+      ["line"]=>
+      int(29)
+      ["args"]=>
+      array(1) {
+        [0]=>
+        string(59) "/home/reachnh6/public_html/barharbormotel.com/wp-config.php"
+      }
+      ["function"]=>
+      string(12) "require_once"
+    }
+    [13]=>
+    array(4) {
+      ["file"]=>
+      string(64) "/home/reachnh6/public_html/barharbormotel.com/wp-blog-header.php"
+      ["line"]=>
+      int(12)
+      ["args"]=>
+      array(1) {
+        [0]=>
+        string(57) "/home/reachnh6/public_html/barharbormotel.com/wp-load.php"
+      }
+      ["function"]=>
+      string(12) "require_once"
+    }
+    [14]=>
+    array(4) {
+      ["file"]=>
+      string(55) "/home/reachnh6/public_html/barharbormotel.com/index.php"
+      ["line"]=>
+      int(17)
+      ["args"]=>
+      array(1) {
+        [0]=>
+        string(64) "/home/reachnh6/public_html/barharbormotel.com/wp-blog-header.php"
+      }
+      ["function"]=>
+      string(7) "require"
+    }
+  }
+  ["previous":"Exception":private]=>
+  NULL
+  ["faultstring"]=>
+  string(22) "Internal Server Error."
+  ["faultcode"]=>
+  string(4) "HTTP"
+}

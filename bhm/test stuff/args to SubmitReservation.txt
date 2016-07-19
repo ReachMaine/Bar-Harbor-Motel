@@ -1,0 +1,25 @@
+array(21) { 
+	["userid"]=> int(1204) 
+	["userpwd"]=> string(8) "je398bgf" 
+	["Arrival"]=> object(DateTime)#384 (3) {
+		 ["date"]=> string(26) "2015-05-21 00:00:00.000000" ["timezone_type"]=> int(3) ["timezone"]=> string(3) "UTC" } 
+	["Departure"]=> object(DateTime)#385 (3) { 
+		["date"]=> string(26) "2015-05-24 00:00:00.000000" ["timezone_type"]=> int(3) ["timezone"]=> string(3) "UTC" } 
+	["Adults"]=> int(2) 
+	["Children"]=> int(4) 
+	["roomtype"]=> int(3) 
+	["seasonnumber"]=> int(196) 
+	["firstname"]=> string(5) "Linda" 
+	["lastname"]=> string(7) "Speight" 
+	["address"]=> string(13) "51 Pine Heath" 
+	["city"]=> string(10) "bar Harobr" 
+	["state"]=> string(2) "ME" 
+	["postalcode"]=> string(5) "04609" 
+	["phone"]=> string(14) "(207) 288-3918" 
+	["email"]=> string(30) "lspeight@ellsworthamerican.com" 
+	["specialrequests"]=> string(19) "AAA room near pool." 
+	["creditcardnumber"]=> string(19) "6011 1111 1111 1111" 
+	["expdate"]=> string(10) "07/25/2016" 
+	["cardholder"]=> string(16) "Linda M. Speight" 
+	["CompanyNumber"]=> int(2)
+}

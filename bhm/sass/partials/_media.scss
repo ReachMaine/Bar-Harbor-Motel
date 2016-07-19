@@ -1,0 +1,97 @@
+/* media settings */
+/* avada break points 
+ * 800px - main nav hides & mobile nav shows
+ *		  - footers stack 
+ * 767px - content breaks
+*/
+// Mobile device.
+@media only screen and (max-width: 800px) {
+	.phone-hidden {
+		display: none;
+		visibility: hidden;
+		height: 0px;
+		width: 0px;
+		border: 0px;
+		padding: 0px;
+		margin: 0px;
+	}
+	.phone-show {
+		visibility: visible;
+	}
+
+	.logo-container .logo a img {
+		margin-top: 1px;
+	}
+
+	.bhm-color-button { // striped button
+		text-align: center;
+	}
+
+	.footer-area {
+		.textwidget, #menu-footer-menu {
+			text-align: center; // center widgets at home size.
+		}
+	}
+	.bh_avail_tab_wrap {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.ninja-forms-form-wrap .bhm-align-fields,
+	.bhm-align-fields { // align with form fields, but cleared for mobile
+		padding-left: 0px;
+		text-align: center;
+	}
+
+}
+
+
+// NOT on mobile 
+@media only screen and (min-width:800px) {
+	// home page specials for slideshow
+	body.home {
+		#sidebar {
+			  .bhm-accord-menu {
+		    	z-index: 99;
+		    	margin-top: -490px; // with slidshow height: of 500;
+		    	margin-bottom: 20px;
+		    }
+		    .bhm-book-now {
+		    	margin-bottom: 140px!important;
+		    	z-index: 99;
+		    	.bhm-color-button {
+		    		box-shadow: none!important;
+		    	}
+		    }
+		}
+	}
+}
+// still no mobile, but different break
+@media screen and (min-width: 767px) {
+	body.single-sidebar {
+		#content {
+			width: 74%;
+
+		}
+	}
+
+}
+
+// small mobile
+@media only screen and (max-width: 480px) {
+	.ninja-forms-form-wrap .field-wrap, 
+	#ninja_forms_form_9_wrap .field-wrap {
+		label {
+			width: auto;
+			text-align: left;
+		}
+	}
+	#slogan {
+		display: none;
+		visibility: hidden;
+		height: 0px;
+		width: 0px;
+		border: 0px;
+		padding: 0px;
+		margin: 0px;
+	}
+}

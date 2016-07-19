@@ -1,0 +1,60 @@
+Args:
+
+array(21) {
+  ["userid"]=>
+  int(1204)
+  ["userpwd"]=>
+  string(8) "je398bgf"
+  ["Arrival"]=>
+  object(DateTime)#384 (3) {
+    ["date"]=>
+    string(26) "2015-05-04 00:00:00.000000"
+    ["timezone_type"]=>
+    int(3)
+    ["timezone"]=>
+    string(3) "UTC"
+  }
+  ["Departure"]=>
+  object(DateTime)#385 (3) {
+    ["date"]=>
+    string(26) "2015-05-07 00:00:00.000000"
+    ["timezone_type"]=>
+    int(3)
+    ["timezone"]=>
+    string(3) "UTC"
+  }
+  ["Adults"]=>
+  int(2)
+  ["Children"]=>
+  int(1)
+  ["roomtype"]=>
+  int(2)
+  ["seasonnumber"]=>
+  int(196)
+  ["firstname"]=>
+  string(5) "Linda"
+  ["lastname"]=>
+  string(7) "Speight"
+  ["address"]=>
+  string(16) "51 Pine Heath Rd"
+  ["city"]=>
+  string(10) "Bar Harbor"
+  ["state"]=>
+  string(2) "ME"
+  ["postalcode"]=>
+  string(5) "04605"
+  ["phone"]=>
+  string(14) "(207) 288-3918"
+  ["email"]=>
+  string(30) "lspeight@ellsworthAmerican.com"
+  ["specialrequests"]=>
+  string(9) "AARP hey."
+  ["creditcardnumber"]=>
+  string(19) "6011 1111 1111 1117"
+  ["expdate"]=>
+  string(5) "12/18"
+  ["cardholder"]=>
+  string(16) "Linda M. Speight"
+  ["CompanyNumber"]=>
+  int(2)
+}

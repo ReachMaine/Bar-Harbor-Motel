@@ -1,0 +1,541 @@
+/*
+Theme Name: bhm
+
+Description: This is a child theme for Bar Harbor Motel
+
+Template: Avada
+Version: 3.7.3
+Author URI: http://www.reachmaine.com/
+*/
+ 
+@import url("../Avada/style.css");
+@import "partials/settings";
+@import "partials/menus";
+@import "partials/checkrms";
+@import "partials/forms";
+// @import "partials/media";  - this should be at the end s.t. it overrides all of these settings.
+ 
+/* =Theme customization starts here */
+.phone-show {
+    visibility: hidden; // defaults to hidden shown at phone size;
+}
+* {
+   // font-family: "'Open Sans'"!important;
+}
+#content {
+    // width: 70%!important; cant do that, messes up table sizing.
+}
+#content a:hover {
+    color: $content-link-hover;
+}
+/**** header stuff **********/
+#header {
+    padding-bottom: 0px!important;
+    background-color: $bhm-header-bkground!important;
+    #header-banner {
+          div {
+            display: inline-block;
+        }
+        a {
+            color: $headerFontColor
+        }
+        a:hover {
+            color: $headerFontColor;
+        }
+    }  
+}
+
+.bhm-bigphone {
+    font-size: 35px;
+    padding-left: 10px;
+    //color: $headerFontColor;
+}
+.bhm-bigphone:hover { // override link hover for header.
+    //text-decoration: underline;
+    //color: $headerFontColor;
+}
+
+#slogan {
+    //background-color: $bhm-blue;
+    // opacity: 0.7; - this made the text also transparent.
+    background-color: rgba(19, 138, 168, 0.7);
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    border-bottom-left-radius: 70px;
+    padding-right: 12%;
+    padding-left: 10px;
+    .bhm-slogan {
+        padding-left: 20px;
+        
+    }
+}
+// end header stuff
+.sidebar .widget {
+    margin-bottom: 35px;
+}
+.sidebar .widget.bhm-widget-bottom-short {
+    margin-bottom: 6px;
+}
+#main {
+    padding-bottom: 0px!important;
+}
+.table-1 tr td {
+    padding-left: 5px!important;
+    padding-right: 5px!important;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.mt18 {
+    margin-top: 18px;
+}
+
+.br6 {
+    border-radius: 6px;
+}
+.mb0,
+.fusion-column.fusion-one-half.mb0 {
+    margin-bottom: 0px;
+}
+.bhm-arrow_after:after {
+     font-family: FontAwesome;
+    content: "\f105";
+    color: $linkcolor-light;
+    font-weight: bold;
+    padding-right: 4px;
+    float: right;
+    font-size: 24px;
+    text-shadow: #808080 1px 1px;
+}
+
+/// done sidebar menu styling ///
+#content {
+   // width: 70%!important; //doesnt work for pages with 2 sidebars... ???
+}
+.post-content {
+   /* font-family: "'Open Sans'"; */
+}
+.post-content > h1 { // remove margin on top of page title
+    margin-top: 0px;
+}
+.bhm-FAQ-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-left: 60px solid #57a6c4;
+    .bhm-question-mark,
+    .bhm-answer-mark {
+        float: left;
+        margin-left: -25px;
+        padding-top: 5px;
+    }
+    .bhm-question-mark:before,
+    .bhm-answer-mark:before { // some things for both 'marks'
+        margin: -20px;
+        font-size: 40px;
+        line-height: 40px;
+        color: $menu-font-color;
+        font-family: Arimo, Arial sans-serif;
+    }
+    .bhm-question-mark:before{
+        content: "Q";  
+    }
+    .bhm-answer-mark:before {
+        content: "A";
+    }
+    .bhm-question,
+    .bhm-answer {
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    .bhm-answer > p:last {
+        margin-bottom:0px;
+    }
+}
+
+.bhm-blue_content_box,
+.bhm-blue_sidebar_box { // widget class 
+   width: 100%;
+    background-color: $bhm-blue; //  #138AA8; 
+    padding: 8px;
+    color: #FFF;  
+    padding: 8px 14px;  
+    border-radius: 6px!important;
+    /*text-align: center;*/
+    font-size: 16px;
+    margin-bottom: 4px!important;
+    .bhm-blue_content_link, .bhm-blue_sidebar_link {
+     	color: $bhm-blue-box-font;
+    }
+    .bhm-blue_content_link:hover, .bhm-blue_sidebar_link:hover {
+        color: $linkcolor-light;
+    }   
+}
+.bhm-blue_content_wrap {
+    margin-bottom: 20px;
+    .bhm-blue_content_box {
+        max-width: 50%;
+        margin-left: 15%;
+        text-align: center;
+    }
+}
+.bhm-tinycaps {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.bhm-color-button {  // striped background button, usually on left sidebar
+    background-image: url("https://barharbormotel.com/wp-content/uploads/2015/03/color_button.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 20px 10px;
+    color: $linkcolor-light;
+    font-size: 20px;
+    margin-bottom: 14px!important;
+    box-shadow: 3px 3px 3px #b7b1a3;
+    border-radius: 5px;
+    max-width: 260px;
+    a {
+        color: $bhm-blue-box-font; 
+    }
+    a:hover {
+        //color: $bhm-blue-box-hover;
+        //text-decoration: underline;
+    }
+}
+
+.bhm-rainy-day-box {
+    background: url("../bhm1/images/umbrella.png");
+    background-repeat:  no-repeat;
+    background-position: top right;
+    background-color: #FFFDF1!important;
+    padding: 20px;
+    margin-bottom: 20px;
+    h2 {
+        color: $bhm-blue;
+        font-weight: bold;
+    }
+    h3 {
+        font-weight: bold;
+        margin: 0px;
+    }
+    h2 {
+        color: $bhm-blue!important;
+        font-weight: bold!important;
+    }
+    a {
+        color: black;
+    }
+}
+
+.bhm-vacation-package-box {
+    background: url("../bhm1/images/boat.png");
+    background-color: #FFFDF1;
+    padding: 15px;
+    background-repeat:  no-repeat;
+    background-position: top right;
+
+
+}
+
+.bhm-package-title {
+    color: #003859!important;
+    font-weight: bold!important;
+}
+
+.bhm-vacation-package-box table, th, td {
+    border: none!important;
+    font-weight: bold;
+}
+
+.bhm-vacation-package-box tr:nth-child(odd){
+    background-color: #EBE5CB;
+}
+
+.bhm-vacation-package-box tr:nth-child(even){
+    background-color: #FFFDF1;
+}
+.widget.bhm-blue_sidebar_box {
+
+}
+
+.post-content blockquote {
+    //background-color: green!important;
+}
+
+blockquote {
+    background-color: transparent!important;
+    margin: 5px 0px;
+    padding: 0px 7px!important;
+    border-left-color: $bhm-blue!important;
+    font-style: normal!important;  
+    border-left: 2px solid  $bhm-blue!important;
+}
+
+.bhm-block_quote_blue {
+    background-color: transparent!important;
+    margin: 5px 0px;
+    padding: 0px 7px!important;
+    border-left: 3px solid $bhm-blue!important;
+    border-left-color: $bhm-blue!important;
+    color: $bhm-blue!important;
+}
+
+.bhm-room-top-block {
+    background-color: #FFFDF1;
+    padding: 10px;
+    height: 70px;
+    h2 {
+        width: 50%;
+        float: left;
+    }
+}
+.bhm-table {  // table on rates page & available rooms 
+    border: 1px solid $bhm-border-blue; 
+    thead {
+        tr {
+            th {
+                padding: 10px;
+            }
+        }
+    }
+}
+.bhm-room-rates {
+    background-color: #B7B1A3;
+    padding: 3px 9px;
+    float: right;
+    color: #FFFDF1;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    a {
+        color: $linkcolor-light;
+    }
+}
+
+.sidebar .bhm-guest-services {
+    background-color: #FFFDF1;
+    padding: 10px;
+    .heading h3 {
+        font-weight: bold!important;
+        color: $bhm-dkr_blue!important;
+        font-size: 20px!important;
+        margin-bottom: 6px;
+    }
+    ul {
+        list-style: disc!important;
+        list-style-image: initial!important;
+        li {
+           
+            font-size: 15px;
+            margin-bottom: 7px;
+            padding-left: 8px;
+        }
+        li:before {
+            content: "•";
+            padding-right: 3px;
+        }
+    }
+    p {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+}
+
+.sidebar .bhm-activities { // top ul:  DOW, 2nd level:  aft/even  3rd level:  event.
+    background-color: #FFFDF1;
+    padding: 10px;
+    .heading h3 {
+        font-weight: bold!important;
+        color: $bhm-dkr_blue!important;
+        font-size: 20px!important;
+        margin-bottom: 6px;
+    }
+    ul { // whole shebang....
+        //list-style: disc!important;
+        //list-style-image: initial!important;
+        li { // DOW
+            color: $bhm-blue;
+            font-size: 18px;
+            padding-bottom: 12px;
+            //margin-bottom: 7px;
+            //padding-bottom: 14px;
+            //padding-left: 8px;
+            ul { // afternoon/evening
+                padding-left: 15px;
+                
+                margin-bottom: 0px;
+                li {
+                    padding-bottom: 0px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: $headerFontColor;
+                    ul {  // event itself
+                        li {
+                            padding-bottom: 0px;
+                            color: $bhm-blue;
+                            font-size: 16px;
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+}
+  
+
+
+.bhm-back_to_top {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+#king {
+    margin: 0px;
+}
+
+#queen {
+    margin: 0px;
+}
+
+#family {
+    margin: 0px;
+}
+.bhm-check_avail { // for cf7 that we're not using.
+    border: 3px double #ccc;
+    padding: 0.5em;
+  dl {
+
+  }
+  dt {
+    float: left;
+    clear: left;
+    width: 200px;
+    text-align: right;
+    font-weight: bold;
+    line-height:40px;
+  }
+  dt:after {
+    content: ":";
+  }
+  dd {
+    margin: 0 0 0 210px;
+    padding: 0 0 0.5em 0;
+  }
+}
+input[type="text"], input[type="email"], textarea, select {
+    color: $input-font-color!important;
+}
+/* TripAdvisor widget */
+#TA_selfserveprop586 #CDSWIDSSP{
+    width: 100%!important;
+    max-width: 240px;
+}
+/* contact form 7 */
+.wpcf7-form-control.wpcf7-submit { // submit button
+    background-color: $bhm-blue!important;
+    background-image: none!important;
+    width: 200px;
+}
+.wpcf7-form-control.wpcf7-submit:hover {
+    background-color: $bhm-menu-hover;
+}
+#policies .nav-tabs li:not(.active) a:hover  { // policies tab.
+    background-color: $bhm-border-blue;
+    border-top-color: $bhm-border-blue;
+}
+/* gallery */
+.slideshow-wrapper {
+    padding: 8px 8px 0px 8px;
+    background-color: #f4f2e1;
+}
+.footer-area { // footer widgets space.
+   color: $silver!important;
+    //padding-top: 20px!important; theme option
+    //padding-bottom: 20px!important; theme option
+    a {
+        text-shadow: none;
+    }
+    .columns .col {
+        margin-bottom: 0px!important;
+    }
+    .footer-menu {
+        padding-top: 20px;
+        a {
+            border-bottom: 0px;
+            color: $bhm-dk_blue;
+            font-weight: bold;
+            padding-bottom: 0px;
+            font-size: 20px;
+            line-height:20px;
+            font-family: Arimo, sans-serif;
+        }
+        li.current-menu-item {
+            a {
+                color: $bhm-dk_blue!important;
+
+            }  
+            a:hover {
+                color: $bhm-menu-hover!important;
+            } 
+        }
+       
+        a:hover {
+            color: $bhm-menu-hover;
+        }
+    }
+}
+#footer { // copyright area
+
+    // theme options padding-top: 10px;
+    .copyright {
+        text-shadow: none;
+        color: $silver!important;
+    }
+}
+.footer-area, #footer { // both footer widget area AND copyright area.
+    
+}
+
+.iframe-container {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 1120px;
+    //padding-bottom: 660px;
+    height: 0px;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.iframe-container2 {
+    position: relative;
+    padding-top: 100px;
+    //padding-bottom: 1240px;
+    padding-bottom: 660px;
+    height: 0px;
+    -webkit-overflow-scrolling: touch;
+    //overflow: scroll;
+    overflow-y: scroll;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        //overflow-y: scroll;
+        //-webkit-overflow-scrolling: touch;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@import "partials/media"; // keep this last!!!

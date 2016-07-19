@@ -1,0 +1,116 @@
+/* checkrms - styling of availability check with nitelink here */
+/* colored defined in settings.scss 
+
+*/
+.nitelink-box {
+	margin-top: 10px;
+	border: 1px solid $bhm-dk_blue;
+	padding: 10px 5px;
+}
+.bhm-check_avail_title { // both checking & results
+	font-size: 24px;
+	color: $bhm-dk_blue;
+	text-align:center;
+	margin-bottom: 10px;
+	font-weight: bold;
+
+}
+
+.bhm-no-rooms {
+	margin-top: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#bhm-check_avail_box {
+	#form-check-avail { // table
+		width: 100%;
+		tr{
+			height: 40px;
+			th{
+				text-align: right;
+				padding-right: 10px;
+			}
+			td {
+				.input-text, input[type="text"] {
+					padding-left: 8px;
+					padding-right: 3px;
+				}
+			}
+		}
+		#checkavail  {
+			color: white;
+			background-color: $bhm-blue;
+			text-align: center;
+			border-radius: $border-radius;
+		}
+		.btn_checknow {
+			margin-top: 10px;
+		}
+	}
+
+	.btn_checknow {
+		//padding-top: 10px;
+		//text-align: left;
+		//border: 0px;
+
+	}
+}
+#bhm_bookit {
+	text-align: center;
+	padding-top: 20px;
+	a {
+		background-color: $bhm-blue;
+		color: $bhm-blue-box-font;
+		border-radius: $border-radius;
+	}
+}
+// the results.....
+#nitelink_available_rooms {
+	.bhm_avail_headdates, 
+	.bhm_avail_headdesc {
+		text-align: center;
+	}
+
+	.bhm_avail_box {
+		margin-top: 10px;
+		border: 1px solid $bhm-dk_blue;
+		padding: 10px 5px;
+	}
+	table.bhm_avail_tab {
+		margin-top: 10px;
+		border: 1px solid $bhm-blue;
+		padding: 10px;
+		border-radius: 3px;
+		width: 100%;
+		tr {
+			font-weight: normal;
+			//border-top: 1px;
+			border-bottom: 1px solid $bhm-blue;
+		}
+
+		tr.bhm_avail_tabhead {
+			border-top: 0px;
+			background-color: white;
+			height: 30px;
+			td {
+				font-weight: bold;
+			}
+			td.bhm_estimate {
+				text-align: right;
+			}
+		}
+		td {
+			//padding-left: 5px;
+		}
+		td.price {
+			text-align: center;
+			padding-right: 4px;
+		}
+		td.price:before {
+			content:"$";
+		}
+		
+	}
+}
+/* end checkrms */

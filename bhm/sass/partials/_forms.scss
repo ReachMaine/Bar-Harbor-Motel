@@ -1,0 +1,164 @@
+/* ninja forms styling , 
+*  general styling first, specific form/field styling at bottom
+*/
+$reserve-label-width: 150px;
+
+.bhm-avail_title { // both checking & results
+	font-size: 22px;
+	line-height: normal;
+	//color: $bhm-dk_blue;
+	text-align:center;
+	margin-bottom: 10px;
+	font-weight: bold;
+
+}
+.ninja-forms-form-wrap {
+	border: 1px solid $bhm-border-blue;
+	padding: 10px 10px;
+
+	.ninja-forms-form-title {
+		font-size: 24px;
+		color: $bhm-dk_blue;
+		text-align:center;
+		margin-bottom: 10px;
+		font-weight: bold;
+	}
+	// all fields stuff...
+	.ninja-forms-required-items, 	
+	.ninja-forms-req-symbol {
+		display: none;
+		visibility: hidden;
+	}
+
+	.field-wrap {
+		margin-bottom: 10px;
+		label {
+			padding-top: 6px;
+			display: block;
+			float: left;
+			width: 80px; // overwritten below for specific forms or fields;
+			text-align: right;
+
+		}
+		.input-text, input[type="text"] {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+	}
+
+	// specific types of fields 
+	.bhm-align-fields { // align with form fields, but cleared for mobile
+		padding-left: $reserve-label-width;
+	}
+	.bhm-text-box-wrap {
+		.bhm-text-box {
+			//height: 68px;
+		}
+	}
+	.text-wrap {
+		.ninja-forms-field.ninja-forms-datepicker {
+			padding-left: 8px;
+
+		}
+	}
+	.number-wrap {
+		.ninja-forms-field {
+			padding: 5px 3px 5px 8px; 
+		}
+	}
+	.submit-wrap {
+		text-align: center;
+		margin-top: 10px; // a little extra padding for the submit button
+		.bhm-submit-button, input {
+			padding: 8px 14px;
+			color: #FFF;
+	 		background-color: #138AA8;
+	  		text-align: center;
+	  		width: 80%;
+	  		font-size: 16px;
+	  		border-radius: 6px;
+	  		max-width: 250px;
+		}  
+	}
+	
+	.ninja-forms-response-msg {
+		text-align: center;
+	}
+	.bhm-form-group.inline {
+		.field-wrap {
+			width: auto;
+			float: left;
+		}
+	}
+	.bhm-form-group 
+		.close-div {
+		clear: both;
+	}
+}
+// specific forms.
+#ninja_forms_form_9_wrap {
+	.field-wrap > label {
+		width: $reserve-label-width;
+	}
+	.field-wrap.no-label-wrap > label {
+		//width: $reserve-label-width;
+		width: 10px;
+	}
+	.field-wrap.list-checkbox-wrap {
+		ul li {
+			label {
+				width: 100%;
+			}
+		}
+	}
+	.field-wrap.list-dropdown-wrap select {
+		padding-left: 5px;
+		padding-top: 5px;
+		padding-bottom: 8px;
+	}
+}
+#ninja_forms_form_12_wrap, 
+#ninja_forms_form_10_wrap {
+	border: 0px;
+	padding: 0px 0px;
+}
+.bh_avail_tab_wrap {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+// results table
+table.bhm_avail_tab {
+		margin-top: 10px;
+		border: 1px solid $bhm-blue;
+		//padding: 10px; does nothting to a table.
+		border-radius: 3px;
+		width: 100%;
+		tr {
+			font-weight: normal;
+			//border-top: 1px;
+			border-bottom: 1px solid $bhm-blue;
+		}
+
+		tr.bhm_avail_tabhead {
+			border-top: 0px;
+			background-color: white;
+			height: 30px;
+			td {
+				font-weight: bold;
+			}
+			td.bhm_estimate {
+				text-align: center;
+			}
+		}
+		td {
+			//padding-left: 5px;
+		}
+		td.price {
+			text-align: center;
+			padding-right: 4px;
+		}
+		td.price:before {
+			content:"$";
+		}
+		
+	}

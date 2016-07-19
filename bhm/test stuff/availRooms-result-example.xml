@@ -1,0 +1,53 @@
+array(5) { 
+	[0]=> object(stdClass)#523 (6) {
+		["RoomType"]=> int(2) 
+		["Description"]=> string(7) "2 QUEEN" 
+		["ShortName"]=> string(2) "QQ" 
+		["Smoking"]=> bool(false) 
+		["RatesByDate"]=> object(stdClass)#524 (1) { 
+			["Rate"]=> array(3) { 
+				[0]=> object(stdClass)#525 (5) { 
+					["SeasonNumber"]=> int(208) 
+					["Amount"]=> string(2) "99" 
+					["RateType"]=> string(5) "Daily" 
+					["Nights"]=> string(1) "1" 
+					["StartDate"]=> string(33) "2015-05-29T00:00:00.0000000-06:00"
+				} 
+				[1]=> object(stdClass)#526 (5) { 
+					["SeasonNumber"]=> int(208) 
+					["Amount"]=> string(2) "99" 
+					["RateType"]=> string(5) "Daily" 
+					["Nights"]=> string(1) "1" 
+					["StartDate"]=> string(33) "2015-05-30T00:00:00.0000000-06:00"
+				} 
+				[2]=> object(stdClass)#527 (5) { 
+					["SeasonNumber"]=> int(208)
+					["Amount"]=> string(2) "99" 
+					["RateType"]=> string(5) "Daily" 
+					["Nights"]=> string(1) "1" 
+					["StartDate"]=> string(33) "2015-05-31T00:00:00.0000000-06:00" 
+				} 
+			} 
+		} 
+		["TotalEstimatedStay"]=> string(3) "297" 
+	} 
+	[1]=> object(stdClass)#528 (6) { 
+		["RoomType"]=> int(6) 
+		["Description"]=> string(27) "2 QUEEN HANDICAP ACCESSIBLE" 
+		["ShortName"]=> string(5) "QQHDC" 
+		["Smoking"]=> bool(false) 
+		["RatesByDate"]=> object(stdClass)#529 (1) {
+			 ["Rate"]=> array(3) { [0]=> object(stdClass)#530 (5) { ["SeasonNumber"]=> int(208) ["Amount"]=> string(2) "99" ["RateType"]=> string(5) "Daily" ["Nights"]=> string(1) "1" ["StartDate"]=> string(33) "2015-05-29T00:00:00.0000000-06:00" } [1]=> object(stdClass)#531 (5) { ["SeasonNumber"]=> int(208) ["Amount"]=> string(2) "99" ["RateType"]=> string(5) "Daily" ["Nights"]=> string(1) "1" ["StartDate"]=> string(33) "2015-05-30T00:00:00.0000000-06:00" } [2]=> object(stdClass)#532 (5) { ["SeasonNumber"]=> int(208) ["Amount"]=> string(2) "99" ["RateType"]=> string(5) "Daily" ["Nights"]=> string(1) "1" ["StartDate"]=> string(33) "2015-05-31T00:00:00.0000000-06:00" } } } 
+		["TotalEstimatedStay"]=> string(3) "297" } 
+	[2]=> object(stdClass)#533 (6) { 
+		["RoomType"]=> int(8) 
+		["Description"]=> string(27) "2 QUEEN WITH ATTACHED PATIO" 
+		["ShortName"]=> string(7) "QQPATIO" 
+		["Smoking"]=> bool(false) 
+		["RatesByDate"]=> object(stdClass)#534 (1) { ["Rate"]=> array(3) { [0]=> object(stdClass)#535 (5) { ["SeasonNumber"]=> int(208) ["Amount"]=> string(2) "99" ["RateType"]=> string(5) "Daily" ["Nights"]=> string(1) "1" ["StartDate"]=> string(33) "2015-05-29T00:00:00.0000000-06:00" } [1]=> object(stdClass)#536 (5) { ["SeasonNumber"]=> int(208) ["Amount"]=> string(2) "99" ["RateType"]=> string(5) "Daily" ["Nights"]=> string(1) "1" ["StartDate"]=> string(33) "2015-05-30T00:00:00.0000000-06:00" } [2]=> object(stdClass)#537 (5) { ["SeasonNumber"]=> int(208) ["Amount"]=> string(2) "99" ["RateType"]=> string(5) "Daily" ["Nights"]=> string(1) "1" ["StartDate"]=> string(33) "2015-05-31T00:00:00.0000000-06:00" } } } ["TotalEstimatedStay"]=> string(3) "297" } 
+	[3]=> object(stdClass)#538 (6) { 
+		["RoomType"]=> int(3) ["Description"]=> string(6) "FAMILY" ["ShortName"]=> string(3) "FAM" ["Smoking"]=> bool(false) ["RatesByDate"]=> object(stdClass)#539 (1) { ["Rate"]=> array(3) { [0]=> object(stdClass)#540 (5) { ["SeasonNumber"]=> int(208) ["Amount"]=> string(3) "129" ["RateType"]=> string(5) "Daily" ["Nights"]=> string(1) "1" ["StartDate"]=> string(33) "2015-05-29T00:00:00.0000000-06:00" } [1]=> object(stdClass)#541 (5) { ["SeasonNumber"]=> int(208) ["Amount"]=> string(3) "129" ["RateType"]=> string(5) "Daily" ["Nights"]=> string(1) "1" ["StartDate"]=> string(33) "2015-05-30T00:00:00.0000000-06:00" } [2]=> object(stdClass)#542 (5) { ["SeasonNumber"]=> int(208) ["Amount"]=> string(3) "129" ["RateType"]=> string(5) "Daily" ["Nights"]=> string(1) "1" ["StartDate"]=> string(33) "2015-05-31T00:00:00.0000000-06:00" } } } ["TotalEstimatedStay"]=> string(3) "387" } 
+	[4]=> object(stdClass)#543 (6) { 
+		["RoomType"]=> int(7) ["Description"]=> string(26) "FAMILY HANDICAP ACCESSIBLE" ["ShortName"]=> string(7) "FAM HDC" ["Smoking"]=> bool(false) ["RatesByDate"]=> object(stdClass)#544 (1) { ["Rate"]=> array(3) { [0]=> object(stdClass)#545 (5) { ["SeasonNumber"]=> int(208) ["Amount"]=> string(3) "129" ["RateType"]=> string(5) "Daily" ["Nights"]=> string(1) "1" ["StartDate"]=> string(33) "2015-05-29T00:00:00.0000000-06:00" } [1]=> object(stdClass)#546 (5) { ["SeasonNumber"]=> int(208) ["Amount"]=> string(3) "129" ["RateType"]=> string(5) "Daily" ["Nights"]=> string(1) "1" ["StartDate"]=> string(33) "2015-05-30T00:00:00.0000000-06:00" } [2]=> object(stdClass)#547 (5) { ["SeasonNumber"]=> int(208) ["Amount"]=> string(3) "129" ["RateType"]=> string(5) "Daily" ["Nights"]=> string(1) "1" ["StartDate"]=> string(33) "2015-05-31T00:00:00.0000000-06:00" } } } ["TotalEstimatedStay"]=> string(3) "387" 
+	} 
+}

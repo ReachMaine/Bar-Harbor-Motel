@@ -1,0 +1,695 @@
+@import url("../Avada/style.css");
+/*
+Theme Name: bhm
+
+Description: This is a child theme for Bar Harbor Motel
+
+Template: Avada
+Version: 3.7.3
+Author URI: http://www.reachmaine.com/
+*/
+/* Colors ---------------------------------------------- */
+/* Typography ------------------------------------------ */
+/* styling of menus here */
+/* colored defined in settings.scss 
+$bhm-menu-toplevel 
+$bhm-menu-topactive
+$bhm-menu-2ndlevel
+*/
+body:not(.error404) #small-nav #nav {
+  display: none; }
+
+div#nextend-accordion-menu-nextendaccordionmenuwidget-3 dl dt a span {
+  color: white !important; }
+
+div#nextend-accordion-menu-nextendaccordionmenuwidget-3 dl dt:hover {
+  background-color: #43a8c6; }
+
+div#nextend-accordion-menu-nextendaccordionmenuwidget-3 dl.level1 dt.parent .inner,
+div#nextend-accordion-menu-nextendaccordionmenuwidget-3 dl.level1 dt.parent.opened .inner {
+  background-image: url("./images/arrow.png") !important; }
+
+.bhm-accord-menu {
+  background-color: #00839c; }
+  .bhm-accord-menu dl.level1 dt.level1 .outer .inner a span {
+    font-size: 20px !important;
+    line-height: 30px !important; }
+  .bhm-accord-menu dl.level1 dt.level1.active {
+    background-color: #43a8c6; }
+  .bhm-accord-menu dl.level2 {
+    background-color: #003859; }
+    .bhm-accord-menu dl.level2 dt.level2 .outer .inner a span {
+      font-size: 14px !important; }
+
+/*  styling of mobile menu */
+.mobile-nav-holder .mobile-selector {
+  background-color: #138aa8 !important;
+  color: white;
+  border-color: #c2c2c2; }
+.mobile-nav-holder .mobile-menu-expanded {
+  background-color: #138aa8 !important; }
+  .mobile-nav-holder .mobile-menu-expanded a {
+    color: white !important;
+    font-size: 14px !important; }
+  .mobile-nav-holder .mobile-menu-expanded .open-submenu {
+    color: white !important; }
+  .mobile-nav-holder .mobile-menu-expanded .sub-menu a {
+    background-color: #003859 !important; }
+  .mobile-nav-holder .mobile-menu-expanded .sub-menu a:hover {
+    background-color: #43a8c6 !important; }
+  .mobile-nav-holder .mobile-menu-expanded li.mobile-nav-item li a:before {
+    color: white !important; }
+
+/* end of menu styling */
+/* checkrms - styling of availability check with nitelink here */
+/* colored defined in settings.scss 
+
+*/
+.nitelink-box {
+  margin-top: 10px;
+  border: 1px solid #003859;
+  padding: 10px 5px; }
+
+.bhm-check_avail_title {
+  font-size: 24px;
+  color: #003859;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold; }
+
+.bhm-no-rooms {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center; }
+
+#bhm-check_avail_box #form-check-avail {
+  width: 100%; }
+  #bhm-check_avail_box #form-check-avail tr {
+    height: 40px; }
+    #bhm-check_avail_box #form-check-avail tr th {
+      text-align: right;
+      padding-right: 10px; }
+    #bhm-check_avail_box #form-check-avail tr td .input-text, #bhm-check_avail_box #form-check-avail tr td input[type="text"] {
+      padding-left: 8px;
+      padding-right: 3px; }
+  #bhm-check_avail_box #form-check-avail #checkavail {
+    color: white;
+    background-color: #138aa8;
+    text-align: center;
+    border-radius: 6px; }
+  #bhm-check_avail_box #form-check-avail .btn_checknow {
+    margin-top: 10px; }
+
+#bhm_bookit {
+  text-align: center;
+  padding-top: 20px; }
+  #bhm_bookit a {
+    background-color: #138aa8;
+    color: white;
+    border-radius: 6px; }
+
+#nitelink_available_rooms .bhm_avail_headdates,
+#nitelink_available_rooms .bhm_avail_headdesc {
+  text-align: center; }
+#nitelink_available_rooms .bhm_avail_box {
+  margin-top: 10px;
+  border: 1px solid #003859;
+  padding: 10px 5px; }
+#nitelink_available_rooms table.bhm_avail_tab {
+  margin-top: 10px;
+  border: 1px solid #138aa8;
+  padding: 10px;
+  border-radius: 3px;
+  width: 100%; }
+  #nitelink_available_rooms table.bhm_avail_tab tr {
+    font-weight: normal;
+    border-bottom: 1px solid #138aa8; }
+  #nitelink_available_rooms table.bhm_avail_tab tr.bhm_avail_tabhead {
+    border-top: 0px;
+    background-color: white;
+    height: 30px; }
+    #nitelink_available_rooms table.bhm_avail_tab tr.bhm_avail_tabhead td {
+      font-weight: bold; }
+    #nitelink_available_rooms table.bhm_avail_tab tr.bhm_avail_tabhead td.bhm_estimate {
+      text-align: right; }
+  #nitelink_available_rooms table.bhm_avail_tab td.price {
+    text-align: center;
+    padding-right: 4px; }
+  #nitelink_available_rooms table.bhm_avail_tab td.price:before {
+    content: "$"; }
+
+/* end checkrms */
+/* ninja forms styling , 
+*  general styling first, specific form/field styling at bottom
+*/
+.bhm-avail_title {
+  font-size: 22px;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold; }
+
+.ninja-forms-form-wrap {
+  border: 1px solid #6bafb8;
+  padding: 10px 10px; }
+  .ninja-forms-form-wrap .ninja-forms-form-title {
+    font-size: 24px;
+    color: #003859;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold; }
+  .ninja-forms-form-wrap .ninja-forms-required-items,
+  .ninja-forms-form-wrap .ninja-forms-req-symbol {
+    display: none;
+    visibility: hidden; }
+  .ninja-forms-form-wrap .field-wrap {
+    margin-bottom: 10px; }
+    .ninja-forms-form-wrap .field-wrap label {
+      padding-top: 6px;
+      display: block;
+      float: left;
+      width: 80px;
+      text-align: right; }
+    .ninja-forms-form-wrap .field-wrap .input-text, .ninja-forms-form-wrap .field-wrap input[type="text"] {
+      padding-left: 5px;
+      padding-right: 5px; }
+  .ninja-forms-form-wrap .bhm-align-fields {
+    padding-left: 150px; }
+  .ninja-forms-form-wrap .text-wrap .ninja-forms-field.ninja-forms-datepicker {
+    padding-left: 8px; }
+  .ninja-forms-form-wrap .number-wrap .ninja-forms-field {
+    padding: 5px 3px 5px 8px; }
+  .ninja-forms-form-wrap .submit-wrap {
+    text-align: center;
+    margin-top: 10px; }
+    .ninja-forms-form-wrap .submit-wrap .bhm-submit-button, .ninja-forms-form-wrap .submit-wrap input {
+      padding: 8px 14px;
+      color: #FFF;
+      background-color: #138AA8;
+      text-align: center;
+      width: 80%;
+      font-size: 16px;
+      border-radius: 6px;
+      max-width: 250px; }
+  .ninja-forms-form-wrap .ninja-forms-response-msg {
+    text-align: center; }
+  .ninja-forms-form-wrap .bhm-form-group.inline .field-wrap {
+    width: auto;
+    float: left; }
+  .ninja-forms-form-wrap .bhm-form-group
+  .close-div {
+    clear: both; }
+
+#ninja_forms_form_9_wrap .field-wrap > label {
+  width: 150px; }
+#ninja_forms_form_9_wrap .field-wrap.no-label-wrap > label {
+  width: 10px; }
+#ninja_forms_form_9_wrap .field-wrap.list-checkbox-wrap ul li label {
+  width: 100%; }
+#ninja_forms_form_9_wrap .field-wrap.list-dropdown-wrap select {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 8px; }
+
+#ninja_forms_form_12_wrap,
+#ninja_forms_form_10_wrap {
+  border: 0px;
+  padding: 0px 0px; }
+
+.bh_avail_tab_wrap {
+  padding-left: 10%;
+  padding-right: 10%; }
+
+table.bhm_avail_tab {
+  margin-top: 10px;
+  border: 1px solid #138aa8;
+  border-radius: 3px;
+  width: 100%; }
+  table.bhm_avail_tab tr {
+    font-weight: normal;
+    border-bottom: 1px solid #138aa8; }
+  table.bhm_avail_tab tr.bhm_avail_tabhead {
+    border-top: 0px;
+    background-color: white;
+    height: 30px; }
+    table.bhm_avail_tab tr.bhm_avail_tabhead td {
+      font-weight: bold; }
+    table.bhm_avail_tab tr.bhm_avail_tabhead td.bhm_estimate {
+      text-align: center; }
+  table.bhm_avail_tab td.price {
+    text-align: center;
+    padding-right: 4px; }
+  table.bhm_avail_tab td.price:before {
+    content: "$"; }
+
+/* =Theme customization starts here */
+.phone-show {
+  visibility: hidden; }
+
+#content a:hover {
+  color: #0b5365; }
+
+/**** header stuff **********/
+#header {
+  padding-bottom: 0px !important;
+  background-color: #ebe5cb !important; }
+  #header #header-banner div {
+    display: inline-block; }
+  #header #header-banner a {
+    color: #353439; }
+  #header #header-banner a:hover {
+    color: #353439; }
+
+.bhm-bigphone {
+  font-size: 35px;
+  padding-left: 10px; }
+
+#slogan {
+  background-color: rgba(19, 138, 168, 0.7);
+  z-index: 99;
+  position: absolute;
+  right: 0;
+  border-bottom-left-radius: 70px;
+  padding-right: 12%;
+  padding-left: 10px; }
+  #slogan .bhm-slogan {
+    padding-left: 20px; }
+
+.sidebar .widget {
+  margin-bottom: 35px; }
+
+.sidebar .widget.bhm-widget-bottom-short {
+  margin-bottom: 6px; }
+
+#main {
+  padding-bottom: 0px !important; }
+
+.table-1 tr td {
+  padding-left: 5px !important;
+  padding-right: 5px !important; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.mt18 {
+  margin-top: 18px; }
+
+.br6 {
+  border-radius: 6px; }
+
+.mb0,
+.fusion-column.fusion-one-half.mb0 {
+  margin-bottom: 0px; }
+
+.bhm-arrow_after:after {
+  font-family: FontAwesome;
+  content: "\f105";
+  color: white;
+  font-weight: bold;
+  padding-right: 4px;
+  float: right;
+  font-size: 24px;
+  text-shadow: #808080 1px 1px; }
+
+.post-content {
+  /* font-family: "'Open Sans'"; */ }
+
+.post-content > h1 {
+  margin-top: 0px; }
+
+.bhm-FAQ-box {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left: 60px solid #57a6c4; }
+  .bhm-FAQ-box .bhm-question-mark,
+  .bhm-FAQ-box .bhm-answer-mark {
+    float: left;
+    margin-left: -25px;
+    padding-top: 5px; }
+  .bhm-FAQ-box .bhm-question-mark:before,
+  .bhm-FAQ-box .bhm-answer-mark:before {
+    margin: -20px;
+    font-size: 40px;
+    line-height: 40px;
+    color: white;
+    font-family: Arimo, Arial sans-serif; }
+  .bhm-FAQ-box .bhm-question-mark:before {
+    content: "Q"; }
+  .bhm-FAQ-box .bhm-answer-mark:before {
+    content: "A"; }
+  .bhm-FAQ-box .bhm-question,
+  .bhm-FAQ-box .bhm-answer {
+    padding-top: 5px;
+    padding-left: 10px; }
+  .bhm-FAQ-box .bhm-answer > p:last {
+    margin-bottom: 0px; }
+
+.bhm-blue_content_box,
+.bhm-blue_sidebar_box {
+  width: 100%;
+  background-color: #138aa8;
+  padding: 8px;
+  color: #FFF;
+  padding: 8px 14px;
+  border-radius: 6px !important;
+  /*text-align: center;*/
+  font-size: 16px;
+  margin-bottom: 4px !important; }
+  .bhm-blue_content_box .bhm-blue_content_link, .bhm-blue_content_box .bhm-blue_sidebar_link,
+  .bhm-blue_sidebar_box .bhm-blue_content_link,
+  .bhm-blue_sidebar_box .bhm-blue_sidebar_link {
+    color: white; }
+  .bhm-blue_content_box .bhm-blue_content_link:hover, .bhm-blue_content_box .bhm-blue_sidebar_link:hover,
+  .bhm-blue_sidebar_box .bhm-blue_content_link:hover,
+  .bhm-blue_sidebar_box .bhm-blue_sidebar_link:hover {
+    color: white; }
+
+.bhm-blue_content_wrap {
+  margin-bottom: 20px; }
+  .bhm-blue_content_wrap .bhm-blue_content_box {
+    max-width: 50%;
+    margin-left: 15%;
+    text-align: center; }
+
+.bhm-tinycaps {
+  font-size: 12px;
+  text-transform: uppercase; }
+
+.bhm-color-button {
+  background-image: url("https://barharbormotel.com/wp-content/uploads/2015/03/color_button.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 20px 10px;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 14px !important;
+  box-shadow: 3px 3px 3px #b7b1a3;
+  border-radius: 5px;
+  max-width: 260px; }
+  .bhm-color-button a {
+    color: white; }
+
+.bhm-rainy-day-box {
+  background: url("../bhm1/images/umbrella.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: #fffdf1 !important;
+  padding: 20px;
+  margin-bottom: 20px; }
+  .bhm-rainy-day-box h2 {
+    color: #138aa8;
+    font-weight: bold; }
+  .bhm-rainy-day-box h3 {
+    font-weight: bold;
+    margin: 0px; }
+  .bhm-rainy-day-box h2 {
+    color: #138aa8 !important;
+    font-weight: bold !important; }
+  .bhm-rainy-day-box a {
+    color: black; }
+
+.bhm-vacation-package-box {
+  background: url("../bhm1/images/boat.png");
+  background-color: #FFFDF1;
+  padding: 15px;
+  background-repeat: no-repeat;
+  background-position: top right; }
+
+.bhm-package-title {
+  color: #003859 !important;
+  font-weight: bold !important; }
+
+.bhm-vacation-package-box table, th, td {
+  border: none !important;
+  font-weight: bold; }
+
+.bhm-vacation-package-box tr:nth-child(odd) {
+  background-color: #EBE5CB; }
+
+.bhm-vacation-package-box tr:nth-child(even) {
+  background-color: #FFFDF1; }
+
+blockquote {
+  background-color: transparent !important;
+  margin: 5px 0px;
+  padding: 0px 7px !important;
+  border-left-color: #138aa8 !important;
+  font-style: normal !important;
+  border-left: 2px solid #138aa8 !important; }
+
+.bhm-block_quote_blue {
+  background-color: transparent !important;
+  margin: 5px 0px;
+  padding: 0px 7px !important;
+  border-left: 3px solid #138aa8 !important;
+  border-left-color: #138aa8 !important;
+  color: #138aa8 !important; }
+
+.bhm-room-top-block {
+  background-color: #FFFDF1;
+  padding: 10px;
+  height: 70px; }
+  .bhm-room-top-block h2 {
+    width: 50%;
+    float: left; }
+
+.bhm-table {
+  border: 1px solid #6bafb8; }
+  .bhm-table thead tr th {
+    padding: 10px; }
+
+.bhm-room-rates {
+  background-color: #B7B1A3;
+  padding: 3px 9px;
+  float: right;
+  color: #FFFDF1;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 16px; }
+  .bhm-room-rates a {
+    color: white; }
+
+.sidebar .bhm-guest-services {
+  background-color: #FFFDF1;
+  padding: 10px; }
+  .sidebar .bhm-guest-services .heading h3 {
+    font-weight: bold !important;
+    color: #004469 !important;
+    font-size: 20px !important;
+    margin-bottom: 6px; }
+  .sidebar .bhm-guest-services ul {
+    list-style: disc !important;
+    list-style-image: initial !important; }
+    .sidebar .bhm-guest-services ul li {
+      font-size: 15px;
+      margin-bottom: 7px;
+      padding-left: 8px; }
+    .sidebar .bhm-guest-services ul li:before {
+      content: "•";
+      padding-right: 3px; }
+  .sidebar .bhm-guest-services p {
+    margin-top: 4px;
+    margin-bottom: 4px; }
+
+.sidebar .bhm-activities {
+  background-color: #FFFDF1;
+  padding: 10px; }
+  .sidebar .bhm-activities .heading h3 {
+    font-weight: bold !important;
+    color: #004469 !important;
+    font-size: 20px !important;
+    margin-bottom: 6px; }
+  .sidebar .bhm-activities ul li {
+    color: #138aa8;
+    font-size: 18px;
+    padding-bottom: 12px; }
+    .sidebar .bhm-activities ul li ul {
+      padding-left: 15px;
+      margin-bottom: 0px; }
+      .sidebar .bhm-activities ul li ul li {
+        padding-bottom: 0px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #353439; }
+        .sidebar .bhm-activities ul li ul li ul li {
+          padding-bottom: 0px;
+          color: #138aa8;
+          font-size: 16px;
+          margin-bottom: 0px; }
+
+.bhm-back_to_top {
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
+  padding-top: 10px;
+  font-size: 10px; }
+
+#king {
+  margin: 0px; }
+
+#queen {
+  margin: 0px; }
+
+#family {
+  margin: 0px; }
+
+.bhm-check_avail {
+  border: 3px double #ccc;
+  padding: 0.5em; }
+  .bhm-check_avail dt {
+    float: left;
+    clear: left;
+    width: 200px;
+    text-align: right;
+    font-weight: bold;
+    line-height: 40px; }
+  .bhm-check_avail dt:after {
+    content: ":"; }
+  .bhm-check_avail dd {
+    margin: 0 0 0 210px;
+    padding: 0 0 0.5em 0; }
+
+input[type="text"], input[type="email"], textarea, select {
+  color: #505050 !important; }
+
+/* TripAdvisor widget */
+#TA_selfserveprop586 #CDSWIDSSP {
+  width: 100% !important;
+  max-width: 240px; }
+
+/* contact form 7 */
+.wpcf7-form-control.wpcf7-submit {
+  background-color: #138aa8 !important;
+  background-image: none !important;
+  width: 200px; }
+
+.wpcf7-form-control.wpcf7-submit:hover {
+  background-color: #43a8c6; }
+
+#policies .nav-tabs li:not(.active) a:hover {
+  background-color: #6bafb8;
+  border-top-color: #6bafb8; }
+
+/* gallery */
+.slideshow-wrapper {
+  padding: 8px 8px 0px 8px;
+  background-color: #f4f2e1; }
+
+.footer-area {
+  color: #c2c2c2 !important; }
+  .footer-area a {
+    text-shadow: none; }
+  .footer-area .columns .col {
+    margin-bottom: 0px !important; }
+  .footer-area .footer-menu {
+    padding-top: 20px; }
+    .footer-area .footer-menu a {
+      border-bottom: 0px;
+      color: #003859;
+      font-weight: bold;
+      padding-bottom: 0px;
+      font-size: 20px;
+      line-height: 20px;
+      font-family: Arimo, sans-serif; }
+    .footer-area .footer-menu li.current-menu-item a {
+      color: #003859 !important; }
+    .footer-area .footer-menu li.current-menu-item a:hover {
+      color: #43a8c6 !important; }
+    .footer-area .footer-menu a:hover {
+      color: #43a8c6; }
+
+#footer .copyright {
+  text-shadow: none;
+  color: #c2c2c2 !important; }
+
+.iframe-container {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 1120px;
+  height: 0px;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll; }
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.iframe-container2 {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 660px;
+  height: 0px;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll; }
+  .iframe-container2 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* media settings */
+/* avada break points 
+ * 800px - main nav hides & mobile nav shows
+ *		  - footers stack 
+ * 767px - content breaks
+*/
+@media only screen and (max-width: 800px) {
+  .phone-hidden {
+    display: none;
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px; }
+
+  .phone-show {
+    visibility: visible; }
+
+  .logo-container .logo a img {
+    margin-top: 1px; }
+
+  .bhm-color-button {
+    text-align: center; }
+
+  .footer-area .textwidget, .footer-area #menu-footer-menu {
+    text-align: center; }
+
+  .bh_avail_tab_wrap {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  .ninja-forms-form-wrap .bhm-align-fields,
+  .bhm-align-fields {
+    padding-left: 0px;
+    text-align: center; } }
+@media only screen and (min-width: 800px) {
+  body.home #sidebar .bhm-accord-menu {
+    z-index: 99;
+    margin-top: -490px;
+    margin-bottom: 20px; }
+  body.home #sidebar .bhm-book-now {
+    margin-bottom: 140px !important;
+    z-index: 99; }
+    body.home #sidebar .bhm-book-now .bhm-color-button {
+      box-shadow: none !important; } }
+@media screen and (min-width: 767px) {
+  body.single-sidebar #content {
+    width: 74%; } }
+@media only screen and (max-width: 480px) {
+  .ninja-forms-form-wrap .field-wrap label,
+  #ninja_forms_form_9_wrap .field-wrap label {
+    width: auto;
+    text-align: left; }
+
+  #slogan {
+    display: none;
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px; } }

@@ -1,0 +1,57 @@
+<?php 
+/* stuff */
+if (!function_exists('check_avail_function') ) {
+	/* used in conjuction with page-temlate rates to display the check availibity form & results */		
+	function check_avail_function ($atts) {
+		global $default_arrive, $default_arriveYMD, $default_days, $default_adults, $default_kids;
+		global $form_error_msg, $html_avail_result;
+
+		/* $a = shortcode_atts( array(
+	        'title' => 'Room Availability',
+	        'unvoted' => true // by default show the unvoted 
+	    ), $atts ); 
+	    $result_title = $a['title']; */
+
+		$htmlreturn = '';
+		$htmlreturn .= '<div id="bhm-check_avail_box">';
+		$htmlreturn .= '<h2 class="bhm-check_avail_title">Check Availability</h3>';
+		$htmlreturn .= '<form method="post" id="bhm-check-avail-form" action="'.get_the_permalink().'">';
+		//$htmlreturn .= 		'<input type='hidden' name='user_id' value='BHM' />';
+		//$htmlreturn .= 		'<input type='hidden' name='user_pwd' value='1234' />';
+		$htmlreturn .= 		'<table id="form-check-avail"><tdbody>';
+		$htmlreturn .=         	'<tr class="form-date bhm-arrival-date">';
+	    $htmlreturn .=        		'<th><label for="arrive">Arrival</label></th>';
+	    $htmlreturn .=        		'<td>';
+	    $htmlreturn .=        			'<input class="text-input" name="arrive" type="text" id="arrive" value="'.$default_arrive.'" />';
+/* 	 works differently in IE vs Chrome....   $htmlreturn .=        			'<input name="arrive" type="date" id="arrive" value="'.$default_arriveYMD.'" />'; */
+	    $htmlreturn .=        		'</td>';
+	    $htmlreturn .=        	'</tr>'; 
+	    $htmlreturn .=        	'<tr class="form-numbdays">';
+	    $htmlreturn .=        		'<th><label for="numdays">Nights</label></th>';
+	    $htmlreturn .=        		'<td><input class="text-input" name="numdays" type="text" id="numdays" value="'.$default_days.'" /></td>';
+	    $htmlreturn .=        	'</tr>';
+		$htmlreturn .=          '<tr class="form-numadults">';
+		$htmlreturn .=        		'<th><label for="numadults">Adults</label></th>';
+		$htmlreturn .=        		'<td><input class="text-input" name="numadults" type="text" id="numadults" value="'.$default_adults.'" /></td>';
+		$htmlreturn .=        	'</tr><!-- .form-numadults -->';
+		$htmlreturn .=        	'<tr class="form-numkids">';
+		$htmlreturn .=        		'<th><label for="numkids">Children</label></th>';
+		$htmlreturn .=        		'<td><input class="text-input" name="numkids" type="text" id="numkids" value="'.$default_kids.'" /></td>';
+		$htmlreturn .=        	'</tr><!-- .form-numkids -->';                    
+		$htmlreturn .=        	'<tr class="form-submit">';
+		$htmlreturn .=        		'<td colspan="2" class="btn_checknow">';
+		$htmlreturn .=        			'<input name="checkavail" type="submit" id="checkavail" class="blue_sidebar_link bhm-blue_sidebar_box" value="Check Now" />';
+		$htmlreturn .=        			'<input name="action" type="hidden" id="action" value="checkavail" />';
+		$htmlreturn .=        		'</td>';
+		$htmlreturn .=        	'</tr><!-- .form-submit -->';
+		$htmlreturn .=     '</tbody></table>';
+		$htmlreturn .= '</form>';
+		$htmlreturn .= '</div>'; // end of box.
+		$htmlreturn .= ' <div id="bhm_avail_errormsg" class="bhm_errormsg" style="color:red;">'.$form_error_msg.'</div>';
+
+		$htmlreturn .= ' <div id="available_rooms">'.$html_avail_result.'</div>';
+		return($htmlreturn);
+	} /* end of function check_avail_funtion */
+}
+add_shortcode ('check_availibility','check_avail_function');
+?>

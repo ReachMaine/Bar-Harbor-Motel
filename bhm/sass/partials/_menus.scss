@@ -1,0 +1,92 @@
+/* styling of menus here */
+/* colored defined in settings.scss 
+$bhm-menu-toplevel 
+$bhm-menu-topactive
+$bhm-menu-2ndlevel
+*/
+body:not(.error404) {
+	#small-nav #nav{
+		display: none;
+	}
+}
+
+div#nextend-accordion-menu-nextendaccordionmenuwidget-3 dl dt a span {
+	color: $linkcolor-light!important;
+}
+div#nextend-accordion-menu-nextendaccordionmenuwidget-3 dl dt:hover {
+	background-color: $bhm-menu-hover;
+}
+div#nextend-accordion-menu-nextendaccordionmenuwidget-3 dl.level1 dt.parent .inner,
+div#nextend-accordion-menu-nextendaccordionmenuwidget-3 dl.level1 dt.parent.opened .inner {
+	background-image: url("./images/arrow.png")!important;
+}
+.bhm-accord-menu {
+// padding for levels availabe in backend.  no need to override here.
+	background-color: $bhm-menu-toplevel;
+	dl.level1 dt.level1 {
+		.outer .inner {
+			//padding-left: 10px!important; //accordian menu option
+			//border-color: $bhm-menu-border!important;
+			a span {
+				font-size: 20px!important;
+				line-height: 30px!important;
+			}
+		}
+	}
+	dl.level1 dt.parent {
+		.outer {
+			.inner {
+			}
+		}
+	}
+	dl.level1 dt.level1.active {
+		background-color: $bhm-menu-topactive;
+	}
+	dl.level2 {
+		background-color: $bhm-menu-2ndlevel;
+		dt.level2 {
+			.outer {
+				//padding-left: 0px!important;
+				.inner {
+					//padding-left: 30px;
+					//border-color: $bhm-menu-border2!important;
+					a span {
+					 	font-size:14px!important;
+					}
+				}
+			}
+
+
+		}
+	}
+}
+/*  styling of mobile menu */
+.mobile-nav-holder {
+	.mobile-selector {
+		background-color: $bhm-blue!important;
+		color:$menu-font-color;
+		border-color: $silver;
+	}
+	.mobile-menu-expanded {
+		background-color: $bhm-blue!important;
+		a {
+			color: $menu-font-color!important;	
+			font-size: 14px!important;
+		}
+		.open-submenu {
+			color: $menu-font-color!important;
+			//background-color: $bhm-blue!important;
+		}
+
+		.sub-menu a {
+			background-color: $bhm-menu-2ndlevel!important;
+		}
+		.sub-menu a:hover  {
+			background-color: $bhm-menu-hover!important;
+		}
+		li.mobile-nav-item li a:before{
+			color: $menu-font-color!important;
+		}
+	}
+}
+/* end of menu styling */

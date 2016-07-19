@@ -1,0 +1,39 @@
+<?php
+
+	/**  ea_setup
+	*  init stuff that we have to init after the main theme is setup.
+	* 
+	*/
+	//include_once(get_stylesheet_directory().'/inc/bhm-checkavail.php');
+	//include_once(get_stylesheet_directory().'/inc/bhm-shortcodes.php');
+	add_action('after_setup_theme', 'ea_setup');
+	function ea_setup() {
+	 /* do stuff ehre. */
+	}
+	/* try to silently handle error -- didnt work */
+	/* set_error_handler('handlePhpErrors');
+	function handlePhpErrors($errno, $errmsg, $filename, $linenum, $vars) {
+	    if (stristr($errmsg, "SoapClient::__doRequest")) {
+	         error_log($errmsg); // silently log error
+	         return; // skip error handling
+	    }
+	} */
+	/**
+	* 504 Error Code Reponse Header
+	* Note: This allows you to specify 504 RewriteRules in the .htaccess to use a custom 400.php WordPress template.
+	* Source: http://otroblogmas.com/retornar-410-wordpress/
+	*
+	* @ param string $template
+	* @ return string
+	*/
+/* didnt work....	function e12_response_504( $template ) {
+	    if( '504' == $_SERVER['REDIRECT_STATUS'] ) {
+	        status_header( 504 );
+	        if( file_exists( get_stylesheet_directory_uri().'/504.php' ) ) {
+	            return get_stylesheet_directory_uri().'/504.php';
+	        }
+	    }
+	    return $template;
+	}
+	add_filter( 'template_include', 'e12_response_504' );	*/
+?>
