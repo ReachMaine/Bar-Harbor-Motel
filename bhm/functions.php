@@ -1,8 +1,12 @@
 <?php
-
+/* new way in avada-child theme? */
+	function theme_enqueue_styles() {
+	    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'avada-stylesheet' ) );
+	}
+	add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 	/**  ea_setup
 	*  init stuff that we have to init after the main theme is setup.
-	* 
+	*
 	*/
 	add_action('after_setup_theme', 'ea_setup');
 	function ea_setup() {
@@ -28,11 +32,11 @@
 	/* add favicons for admin */
 	add_action('login_head', 'add_favicon');
 	add_action('admin_head', 'add_favicon');
-	
+
 	function add_favicon() {
 		$favicon_url = get_stylesheet_directory_uri() . '/images/admin-favicon.ico';
 		echo '<link rel="shortcut icon" href="' . $favicon_url . '" />';
-	} 
+	}
 
 	/* function force_ssl($force_ssl, $id = 0) {
 	// A list of posts that should be SSL
