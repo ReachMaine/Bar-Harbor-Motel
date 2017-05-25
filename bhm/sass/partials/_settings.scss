@@ -16,12 +16,12 @@ $menu-font-color: #FFFFFF;
 $bhm-border-blue: #6BAFB8;
 
 
-// Background colors: 
+// Background colors:
 $bhm-header-bkground: #EBE5CB;
-$bkgoundContent: #FFFFFF; // 
+$bkgoundContent: #FFFFFF; //
 $menuBarbkg: #D14719; //
 $bhm-blue: #138AA8;
-$bhm-menu-toplevel: #00839c; 
+$bhm-menu-toplevel: #00839c;
 $bhm-menu-topactive: #43a8c6;
 $bhm-menu-hover: #43a8c6;
 $bhm-menu-2ndlevel: #003859;
@@ -31,4 +31,8 @@ $bhm-menu-border2:#004469;
 // Other things
 $border-radius: 6px;
 
+.reach-logo:before {
+    	content: url('images/reach-favicon.png');
+    	padding-right: 4px;
+    }
 /* Typography ------------------------------------------ */

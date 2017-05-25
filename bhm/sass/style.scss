@@ -7,14 +7,14 @@ Template: Avada
 Version: 3.7.3
 Author URI: http://www.reachmaine.com/
 */
- 
+
 @import url("../Avada/style.css");
 @import "partials/settings";
 @import "partials/menus";
 @import "partials/checkrms";
 @import "partials/forms";
 // @import "partials/media";  - this should be at the end s.t. it overrides all of these settings.
- 
+
 /* =Theme customization starts here */
 .phone-show {
     visibility: hidden; // defaults to hidden shown at phone size;
@@ -29,6 +29,25 @@ Author URI: http://www.reachmaine.com/
     color: $content-link-hover;
 }
 /**** header stuff **********/
+// v5.x style
+.fusion-header-v4 .fusion-header {
+  padding-bottom: 0px!important;
+  .fusion-header-content-3-wrapper {
+    display: inline-flex;
+    .fusion-header-banner {
+      display: inline-flex;
+      line-height: 30px;
+      a {
+          color: $headerFontColor
+      }
+      a:hover {
+          color: $headerFontColor;
+      }
+    }
+  }
+
+}
+// old header style
 #header {
     padding-bottom: 0px!important;
     background-color: $bhm-header-bkground!important;
@@ -42,7 +61,7 @@ Author URI: http://www.reachmaine.com/
         a:hover {
             color: $headerFontColor;
         }
-    }  
+    }
 }
 
 .bhm-bigphone {
@@ -67,7 +86,7 @@ Author URI: http://www.reachmaine.com/
     padding-left: 10px;
     .bhm-slogan {
         padding-left: 20px;
-        
+
     }
 }
 // end header stuff
@@ -138,7 +157,7 @@ Author URI: http://www.reachmaine.com/
         font-family: Arimo, Arial sans-serif;
     }
     .bhm-question-mark:before{
-        content: "Q";  
+        content: "Q";
     }
     .bhm-answer-mark:before {
         content: "A";
@@ -154,12 +173,12 @@ Author URI: http://www.reachmaine.com/
 }
 
 .bhm-blue_content_box,
-.bhm-blue_sidebar_box { // widget class 
+.bhm-blue_sidebar_box { // widget class
    width: 100%;
-    background-color: $bhm-blue; //  #138AA8; 
+    background-color: $bhm-blue; //  #138AA8;
     padding: 8px;
-    color: #FFF;  
-    padding: 8px 14px;  
+    color: #FFF;
+    padding: 8px 14px;
     border-radius: 6px!important;
     /*text-align: center;*/
     font-size: 16px;
@@ -169,7 +188,7 @@ Author URI: http://www.reachmaine.com/
     }
     .bhm-blue_content_link:hover, .bhm-blue_sidebar_link:hover {
         color: $linkcolor-light;
-    }   
+    }
 }
 .bhm-blue_content_wrap {
     margin-bottom: 20px;
@@ -180,6 +199,7 @@ Author URI: http://www.reachmaine.com/
     }
 }
 .bhm-tinycaps {
+    color: $silver;
     font-size: 12px;
     text-transform: uppercase;
 }
@@ -195,7 +215,7 @@ Author URI: http://www.reachmaine.com/
     border-radius: 5px;
     max-width: 260px;
     a {
-        color: $bhm-blue-box-font; 
+        color: $bhm-blue-box-font;
     }
     a:hover {
         //color: $bhm-blue-box-hover;
@@ -267,7 +287,7 @@ blockquote {
     margin: 5px 0px;
     padding: 0px 7px!important;
     border-left-color: $bhm-blue!important;
-    font-style: normal!important;  
+    font-style: normal!important;
     border-left: 2px solid  $bhm-blue!important;
 }
 
@@ -289,8 +309,8 @@ blockquote {
         float: left;
     }
 }
-.bhm-table {  // table on rates page & available rooms 
-    border: 1px solid $bhm-border-blue; 
+.bhm-table {  // table on rates page & available rooms
+    border: 1px solid $bhm-border-blue;
     thead {
         tr {
             th {
@@ -325,7 +345,7 @@ blockquote {
         list-style: disc!important;
         list-style-image: initial!important;
         li {
-           
+
             font-size: 15px;
             margin-bottom: 7px;
             padding-left: 8px;
@@ -362,7 +382,7 @@ blockquote {
             //padding-left: 8px;
             ul { // afternoon/evening
                 padding-left: 15px;
-                
+
                 margin-bottom: 0px;
                 li {
                     padding-bottom: 0px;
@@ -380,10 +400,10 @@ blockquote {
                 }
             }
         }
-       
+
     }
 }
-  
+
 
 
 .bhm-back_to_top {
@@ -453,7 +473,8 @@ input[type="text"], input[type="email"], textarea, select {
     padding: 8px 8px 0px 8px;
     background-color: #f4f2e1;
 }
-.footer-area { // footer widgets space.
+.footer-area,
+.fusion-footer { // footer widgets space.
    color: $silver!important;
     //padding-top: 20px!important; theme option
     //padding-bottom: 20px!important; theme option
@@ -474,33 +495,40 @@ input[type="text"], input[type="email"], textarea, select {
             line-height:20px;
             font-family: Arimo, sans-serif;
         }
+        li.menu-item {
+          border-bottom: 0px;
+          a:before {
+            content: none;
+          }
+        }
         li.current-menu-item {
             a {
                 color: $bhm-dk_blue!important;
 
-            }  
+            }
             a:hover {
                 color: $bhm-menu-hover!important;
-            } 
+            }
         }
-       
+
         a:hover {
             color: $bhm-menu-hover;
         }
     }
 }
+
 #footer { // copyright area
 
     // theme options padding-top: 10px;
-    .copyright {
-        text-shadow: none;
-        color: $silver!important;
-    }
+
 }
 .footer-area, #footer { // both footer widget area AND copyright area.
-    
-}
 
+}
+.fusion-copyright-notice {
+    text-shadow: none;
+    color: $silver!important;
+}
 .iframe-container {
     position: relative;
     padding-top: 100px;

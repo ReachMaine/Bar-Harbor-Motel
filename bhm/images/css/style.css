@@ -10,10 +10,6 @@ Author URI: http://www.reachmaine.com/
 */
 @import url("../Avada/style.css");
 /* Colors ---------------------------------------------- */
-.reach-logo:before {
-  content: url("images/reach-favicon.png");
-  padding-right: 4px; }
-
 /* Typography ------------------------------------------ */
 /* styling of menus here */
 /* colored defined in settings.scss 
@@ -389,7 +385,6 @@ table.bhm_avail_tab {
     text-align: center; }
 
 .bhm-tinycaps {
-  color: #C2C2C2;
   font-size: 12px;
   text-transform: uppercase; }
 
@@ -593,20 +588,15 @@ input[type="text"], input[type="email"], textarea, select {
   padding: 8px 8px 0px 8px;
   background-color: #f4f2e1; }
 
-.footer-area,
-.fusion-footer {
+.footer-area {
   color: #C2C2C2 !important; }
-  .footer-area a,
-  .fusion-footer a {
+  .footer-area a {
     text-shadow: none; }
-  .footer-area .columns .col,
-  .fusion-footer .columns .col {
+  .footer-area .columns .col {
     margin-bottom: 0px !important; }
-  .footer-area .footer-menu,
-  .fusion-footer .footer-menu {
+  .footer-area .footer-menu {
     padding-top: 20px; }
-    .footer-area .footer-menu a,
-    .fusion-footer .footer-menu a {
+    .footer-area .footer-menu a {
       border-bottom: 0px;
       color: #003859;
       font-weight: bold;
@@ -614,23 +604,14 @@ input[type="text"], input[type="email"], textarea, select {
       font-size: 20px;
       line-height: 20px;
       font-family: Arimo, sans-serif; }
-    .footer-area .footer-menu li.menu-item,
-    .fusion-footer .footer-menu li.menu-item {
-      border-bottom: 0px; }
-      .footer-area .footer-menu li.menu-item a:before,
-      .fusion-footer .footer-menu li.menu-item a:before {
-        content: none; }
-    .footer-area .footer-menu li.current-menu-item a,
-    .fusion-footer .footer-menu li.current-menu-item a {
+    .footer-area .footer-menu li.current-menu-item a {
       color: #003859 !important; }
-    .footer-area .footer-menu li.current-menu-item a:hover,
-    .fusion-footer .footer-menu li.current-menu-item a:hover {
+    .footer-area .footer-menu li.current-menu-item a:hover {
       color: #43a8c6 !important; }
-    .footer-area .footer-menu a:hover,
-    .fusion-footer .footer-menu a:hover {
+    .footer-area .footer-menu a:hover {
       color: #43a8c6; }
 
-.fusion-copyright-notice {
+#footer .fusion-copyright-notice {
   text-shadow: none;
   color: #C2C2C2 !important; }
 

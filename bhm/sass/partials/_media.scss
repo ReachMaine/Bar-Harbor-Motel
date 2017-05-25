@@ -1,7 +1,7 @@
 /* media settings */
-/* avada break points 
+/* avada break points
  * 800px - main nav hides & mobile nav shows
- *		  - footers stack 
+ *		  - footers stack
  * 767px - content breaks
 */
 // Mobile device.
@@ -26,7 +26,9 @@
 	.bhm-color-button { // striped button
 		text-align: center;
 	}
-
+	.fusion-secondary-main-menu {
+		background-color: $bhm-blue!important; //#138aa8
+	}
 	.footer-area {
 		.textwidget, #menu-footer-menu {
 			text-align: center; // center widgets at home size.
@@ -45,7 +47,12 @@
 }
 
 
-// NOT on mobile 
+// NOT on mobile
+@media only screen and (min-width:801px) {
+	.fusion-header-v4 .fusion-header .fusion-header-content-3-wrapper  {
+		margin-top: -50px;
+	}
+}
 @media only screen and (min-width:800px) {
 	// home page specials for slideshow
 	body.home {
@@ -78,7 +85,7 @@
 
 // small mobile
 @media only screen and (max-width: 480px) {
-	.ninja-forms-form-wrap .field-wrap, 
+	.ninja-forms-form-wrap .field-wrap,
 	#ninja_forms_form_9_wrap .field-wrap {
 		label {
 			width: auto;
