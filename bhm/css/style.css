@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 Theme Name: bhm
 
@@ -487,6 +486,9 @@ blockquote {
   .bhm-room-rates a {
     color: #FFFFFF; }
 
+.easy_youtube_gallery.col-3 .eytg-item {
+  padding-left: 6px; }
+
 .sidebar .bhm-guest-services {
   background-color: #FFFDF1;
   padding: 10px; }
@@ -503,7 +505,7 @@ blockquote {
       margin-bottom: 7px;
       padding-left: 8px; }
     .sidebar .bhm-guest-services ul li:before {
-      content: "•";
+      content: "&#8226";
       padding-right: 3px; }
   .sidebar .bhm-guest-services p {
     margin-top: 4px;

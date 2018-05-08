@@ -331,7 +331,9 @@ blockquote {
         color: $linkcolor-light;
     }
 }
-
+.easy_youtube_gallery.col-3 .eytg-item {
+  padding-left: 6px;
+}
 .sidebar .bhm-guest-services {
     background-color: #FFFDF1;
     padding: 10px;
@@ -351,7 +353,7 @@ blockquote {
             padding-left: 8px;
         }
         li:before {
-            content: "•";
+            content: "&#8226"; //"•";
             padding-right: 3px;
         }
     }
