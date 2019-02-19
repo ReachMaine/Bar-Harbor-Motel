@@ -504,9 +504,6 @@ blockquote {
       font-size: 15px;
       margin-bottom: 7px;
       padding-left: 8px; }
-    .sidebar .bhm-guest-services ul li:before {
-      content: "&#8226";
-      padding-right: 3px; }
   .sidebar .bhm-guest-services p {
     margin-top: 4px;
     margin-bottom: 4px; }
